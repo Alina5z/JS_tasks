@@ -1,27 +1,59 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div {
-            width: 120px;
-            height: 120px;
-            border: 3px solid rgb(238, 13, 170);
-            display: inline-block;
-        }
-        p {
-            width: 120px;
-            height: 120px;
-            background-color: rgb(255, 0, 242);
-            border: 3px solid rgb(207, 33, 33);
-            display: inline-block;
-        }
-        section {
+        section{
             position: absolute;
-            background-color: rgb(164, 236, 30);
+            background-color: brown;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 2px solid blue;
+            background-color: aqua;
+            display: inline-block;
+        }
+        p{
+            width: 200px;
+            height: 200px;
+            border: 2px solid rgb(255, 123, 0);
+            background-color: rgb(255, 0, 242);
+            display: inline-block;
         }
     </style>
 </head>
 <body>
+    <section onclick="click();return false">
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+        <div></div>
+        <p></p>
+    </section>
+    
+    <script>
+        let a = document.body.getElementsByTagName("div", "p");
+        function click() {
+            a.style.overflow = "hidden";
+        };
+    </script>
+</body>
+</html>
